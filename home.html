@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechHireHub | Home</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> 
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+  <div class="logo">TechHireHub</div>
+  <div id="menuToggle" class="menu-icon">&#9776;</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/home.html">Home</a></li>
+    <li><a href="/jobs.html">Jobs</a></li>
+    <li><a href="/postjob.html">Post Job</a></li>
+    <li><a href="#" onclick="logout()">Logout</a></li>
+  </ul>
+</nav>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Find Your Dream Tech Job Today</h1>
+      <p>Explore thousands of tech job listings, connect with top companies, and get hired faster.</p>
+      <button class="cta-btn">Start Searching</button>
+      
+      <!-- Feature Highlights with Icons -->
+      <div class="hero-features">
+        <div class="hero-feature">
+          <i class="fas fa-building"></i>
+          <p>500+ Trusted Companies</p>
+        </div>
+        <div class="hero-feature">
+          <i class="fas fa-briefcase"></i>
+          <p>10,000+ Active Listings</p>
+        </div>
+        <div class="hero-feature">
+          <i class="fas fa-filter"></i>
+          <p>Smart Job Filters</p>
+        </div>
+      </div>
+  
+      <!-- Quick Testimonial -->
+      <div class="hero-testimonial">
+        <p>"I found my dream job within a week! TechHireHub is amazing."</p>
+        <span>- Sarah M., Software Engineer</span>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="statsSection" class="stats-section">
+    <div class="stats-container">
+      <div class="stat">
+        <h3 class="counter" data-target="10000">0</h3>
+        <p>Jobs Posted</p>
+      </div>
+      <div class="stat">
+        <h3 class="counter" data-target="500">0</h3>
+        <p>Companies</p>
+      </div>
+      <div class="stat">
+        <h3 class="counter" data-target="20000">0</h3>
+        <p>Registered Users</p>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Main Features Section -->
+  <section class="features">
+    <h2>Why Choose TechHireHub?</h2>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <i class="fas fa-briefcase"></i>
+        <h3>Job Listings</h3>
+        <p>Browse hundreds of tech job listings from top companies.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-search"></i>
+        <h3>Job Search</h3>
+        <p>Find the right job with our advanced search filters.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-users"></i>
+        <h3>Networking</h3>
+        <p>Connect with recruiters and professionals in the industry.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+  <h2 class="section-title">What Our Users Say</h2>
+  <div class="testimonials-slider-wrapper">
+    <div class="testimonials-slider">
+      <div class="testimonial-card">
+        <p>"TechHireHub helped me land a developer role in no time!"</p>
+        <h4>- Aakash M.</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"The platform is smooth and the job filters are super useful."</p>
+        <h4>- Priya R.</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Amazing experience! The UI is clean and professional."</p>
+        <h4>- Suresh K.</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Got a call from a recruiter within 3 days of applying!"</p>
+        <h4>- Anjali V.</h4>
+      </div>
+
+      <!-- Duplicate for seamless infinite scroll -->
+      <div class="testimonial-card">
+        <p>"TechHireHub helped me land a developer role in no time!"</p>
+        <h4>- Aakash M.</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"The platform is smooth and the job filters are super useful."</p>
+        <h4>- Priya R.</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Amazing experience! The UI is clean and professional."</p>
+        <h4>- Suresh K.</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Got a call from a recruiter within 3 days of applying!"</p>
+        <h4>- Anjali V.</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div id="aboutModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>About TechHireHub</h2>
+    <p>
+      TechHireHub is a dedicated platform connecting tech talent with top companies. 
+      Whether you're a job seeker looking for your next big opportunity or a recruiter 
+      searching for the best minds in tech, TechHireHub streamlines the hiring process 
+      with smart filters, real-time updates, and an intuitive interface.
+    </p>
+  </div>
+</div>
+<!-- Contact Us Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeContactModal()">&times;</span>
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+<!-- Privacy Policy Modal -->
+<div id="privacyModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closePrivacyModal()">&times;</span>
+    <h2>Privacy Policy</h2>
+    <p>
+      At TechHireHub, we respect your privacy. We collect minimal personal data required
+      to provide job-matching services. Your data is never sold and is stored securely.
+      For more information, contact our support team.
+    </p>
+  </div>
+</div>
+
+  
+  <!-- Footer Section -->
+  <footer>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <div class="footer-links">
+      <a href="/">About Us</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <p>&copy; 2025 TechHireHub. All rights reserved.</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>

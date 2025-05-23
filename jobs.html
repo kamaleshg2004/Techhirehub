@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jobs - TechHireHub</title>
+  <link rel="stylesheet" href="jobs.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+  <div class="logo">TechHireHub</div>
+  <div id="menuToggle" class="menu-icon">&#9776;</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/home.html">Home</a></li>
+    <li><a href="/jobs.html">Jobs</a></li>
+    <li><a href="/postjob.html">Post Job</a></li>
+    <li><a href="#" onclick="logout()">Logout</a></li>
+  </ul>
+</nav>
+  <section class="filters">
+  <h3>Filter Jobs</h3>
+  <form id="filterForm">
+    <select id="filterType">
+      <option value="">All Job Types</option>
+      <option value="Full-Time">Full-Time</option>
+      <option value="Part-Time">Part-Time</option>
+      <option value="Internship">Internship</option>
+    </select>
+
+    <select id="filterCategory">
+      <option value="">All Categories</option>
+      <option value="Development">Development</option>
+      <option value="Design">Design</option>
+      <option value="Testing">Testing</option>
+      <option value="Marketing">Marketing</option>
+    </select>
+
+    <select id="filterRemote">
+      <option value="">Remote & Onsite</option>
+      <option value="true">Remote</option>
+      <option value="false">Onsite</option>
+    </select>
+
+    <input type="text" id="filterLocation" placeholder="Location" />
+    <button type="submit">Apply Filters</button>
+  </form>
+</section>
+
+<section id="jobList" class="job-list"></section>
+
+  <section class="jobs-section">
+    <div class="jobs-container" id="jobsContainer">
+      <!-- Jobs will be dynamically inserted here -->
+    </div>
+  </section>
+
+  <script src="jobs.js"></script>
+</body>
+</html>
