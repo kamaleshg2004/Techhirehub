@@ -57,7 +57,7 @@ loginForm.addEventListener('submit', (e) => {
   if (username && password && userType) {
     if (isLogin) {
       // Redirect to home page
-      window.location.href = "../home.html"; // Adjust path if needed
+      window.location.href = "/home.html"; // Adjust path if needed
     } else {
       // Switch to login without alert
       isLogin = true;

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Logout function - you can modify this to suit your actual logout mechanism
 function logout() {
   // Redirect directly to the login page (change URL if needed)
-  window.location.href = "/login/login.html"; 
+  window.location.href = "/index.html"; 
 }
 
 document.addEventListener("DOMContentLoaded", () => {
