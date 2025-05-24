@@ -5,6 +5,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  font-size: 13px; /* Reduced base font size slightly */
+}
+
 body {
   height: 100vh;
   background: linear-gradient(135deg, #74ebd5, #ACB6E5);
@@ -15,11 +19,11 @@ body {
 
 .login-container {
   background: #ffffff;
-  padding: 40px;
+  padding: 30px; /* was 40px */
   border-radius: 12px;
   width: 100%;
-  max-width: 650px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  max-width: 550px; /* was 650px */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
   animation: fadeIn 1s ease;
 }
@@ -30,30 +34,31 @@ body {
 }
 
 h2 {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #333;
-  font-size: 24px;
+  font-size: 20px; /* was 24px */
 }
 
 .input-group {
-  margin-bottom: 20px;
+  margin-bottom: 16px; /* was 20px */
   text-align: left;
 }
 
 .input-group label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-weight: 600;
   color: #444;
+  font-size: 13px;
 }
 
 .input-group input,
 .input-group select {
   width: 100%;
-  padding: 12px;
+  padding: 10px; /* was 12px */
   border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 6px; /* was 8px */
+  font-size: 14px; /* was 16px */
 }
 
 .password-wrapper {
@@ -62,27 +67,27 @@ h2 {
 
 .password-wrapper input {
   width: 100%;
-  padding-right: 40px; /* space for eye icon */
+  padding-right: 36px; /* adjusted for smaller size */
 }
 
 .password-wrapper i {
   position: absolute;
-  right: 12px;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px; /* was 18px */
   color: #666;
 }
 
 button#submitBtn {
   width: 100%;
-  padding: 12px;
+  padding: 10px; /* was 12px */
   background-color: #0077cc;
   border: none;
   color: white;
-  font-size: 18px;
-  border-radius: 8px;
+  font-size: 16px; /* was 18px */
+  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -92,8 +97,8 @@ button#submitBtn:hover {
 }
 
 #toggleText {
-  margin-top: 15px;
-  font-size: 14px;
+  margin-top: 12px; /* was 15px */
+  font-size: 13px;
   color: #555;
 }
 
@@ -110,7 +115,7 @@ button#submitBtn:hover {
 /* Responsive */
 @media (max-width: 500px) {
   .login-container {
-    padding: 30px;
+    padding: 25px; /* was 30px */
     max-width: 90%;
   }
 }
