@@ -47,30 +47,23 @@ togglePassword.addEventListener('click', () => {
 });
 
 // 👉 Form Submit Event
-loginForm.addEventListener('submit', (e) => {
+document.getElementById("loginForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const username = document.getElementById('username').value.trim();
-  const password = document.getElementById('password').value.trim();
-  const userType = document.getElementById('userType').value;
+  const username = document.getElementById("username").value.trim();
+  const password = document.getElementById("password").value.trim();
+  const selectedRole = document.getElementById("userType").value;
 
-  if (username && password && userType) {
-    if (isLogin) {
-      // Redirect to home page
-      window.location.href = "/home.html"; // Adjust path if needed
-    } else {
-      // Switch to login without alert
-      isLogin = true;
-      formTitle.textContent = "Login to TechHireHub";
-      submitBtn.textContent = "Login";
-      toggleText.innerHTML = `New user? <a href="#" id="toggleLink">Sign Up</a>`;
-      emailGroup.style.display = "none";
-    
-      // Reattach event listener after replacing innerHTML
-      document.getElementById('toggleLink').addEventListener('click', toggleLinkEvent);
-    }
-    
+  if (username && password && selectedRole) {
+    // ✅ Save the role in localStorage
+    localStorage.setItem("role", selectedRole);
+    console.log("Role saved:", selectedRole);
+
+    // ✅ Redirect to your main page
+    window.location.href = "home.html"; // change to home.html if needed
   } else {
-    alert("Please fill all the fields.");
+    alert("Please fill in all fields and select a role.");
   }
 });
+
+
