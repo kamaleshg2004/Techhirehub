@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
+   font-size: 0.95rem;
 }
 
 /* Navbar */
@@ -10,19 +11,21 @@ body {
 .navbar {
   background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
   color: #fff;
-  padding: 16px 30px;
+  /* padding: 16px 30px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 1000;
+  padding: 12px 20px;
 }
 
 /* Logo */
 .navbar .logo {
-  font-size: 1.7rem;
+  /* font-size: 1.7rem; */
   font-weight: bold;
   letter-spacing: 1px;
+  font-size: 1.4rem;
 }
 
 /* Nav links */
@@ -38,6 +41,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
+  font-size: 0.95rem;
 }
 
 .navbar .nav-links li a:hover {
@@ -47,9 +51,10 @@ body {
 /* Hamburger icon */
 .menu-icon {
   display: none;
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
   cursor: pointer;
   color: #fff;
+  font-size: 1.5rem;
 }
 
 /* Mobile styles */
@@ -85,12 +90,11 @@ body {
 /* HERO SECTION */
 .hero-section {
   background: url('/Assets/home\ bg1.jpg') center/cover no-repeat;
-  /* background-color:lightseagreen; */
-  padding: 100px 20px;
   text-align: center;
-  color: #00e5ff; 
+  color: #ff4d4d; /* Bright red */
   position: relative;
-  min-height: 400px;
+  padding: 60px 16px;
+  min-height: 350px;
 }
 
 .hero::before {
@@ -98,7 +102,7 @@ body {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Optional dark overlay for readability */
+  background: rgba(0, 0, 0, 0.6); /* Slightly darker overlay for better contrast */
   z-index: 1;
 }
 
@@ -107,25 +111,33 @@ body {
   z-index: 2;
 }
 
-.hero-section h1, .hero-section p {
-  color: #00e5ff; /* Updated text color */
+.hero-section h1 {
+  color: #ff4d4d; /* Red heading */
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+}
+
+.hero-section p {
+  color: #f8d7da; /* Soft light red/pinkish for paragraph */
+  font-size: 1rem;
+  margin-bottom: 16px;
 }
 
 .cta-btn {
-  background-color: #00e5ff; /* Eye-catching cyan */
+  background-color: #ff4d4d; /* Main red button */
   color: #fff;
-  padding: 12px 28px;
-  font-size: 1rem;
   font-weight: 600;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 10px rgba(0, 229, 255, 0.3);
+  box-shadow: 0 4px 10px rgba(255, 77, 77, 0.3);
+  font-size: 0.9rem;
+  padding: 10px 22px;
 }
 
 .cta-btn:hover {
-  background-color: #00bcd4;
+  background-color: #e60000; /* Darker red on hover */
   transform: translateY(-2px);
 }
 
@@ -145,11 +157,13 @@ body {
 
 .hero-feature {
   text-align: center;
-  min-width: 140px;
+  /* min-width: 140px; */
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 1rem;
+  /* padding: 1rem; */
   border-radius: 10px;
   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+   min-width: 120px;
+  padding: 0.8rem;
 }
 .hero-feature:hover {
   transform: translateY(-5px) scale(1.05);
@@ -158,15 +172,17 @@ body {
 }
 
 .hero-feature i {
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
   margin-bottom: 0.5rem;
   display: block;
   color: #ffce00;
+   font-size: 1.8rem;
 }
 
 .hero-feature p {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   font-weight: 500;
+  font-size: 0.9rem;
 }
 .hero-content {
   text-align: center;
@@ -255,15 +271,17 @@ body {
 /* Features */
 .features {
   background-color: #f0f8ff; /* Soft light blue background */
-  padding: 80px 20px;
   text-align: center;
+  padding: 40px 20px;
 }
 
 .features h2 {
-  font-size: 2.4rem;
+  /* font-size: 2.4rem; */
   color: #0f2027;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
 
 .feature-cards {
@@ -277,9 +295,9 @@ body {
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  padding: 30px 20px;
-  width: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px 15px;
+  width: 250px;
 }
 
 .feature-card:hover {
@@ -288,21 +306,23 @@ body {
 }
 
 .feature-card i {
-  font-size: 2.8rem;
   color: #00bcd4;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+  font-size: 2.2rem;
 }
 
 .feature-card h3 {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   color: #333;
   margin-bottom: 10px;
+   font-size: 1.3rem;
 }
 
 .feature-card p {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   color: #555;
   line-height: 1.6;
+   font-size: 0.95rem;
 }
 @media (max-width: 768px) {
   .feature-cards {
@@ -312,6 +332,7 @@ body {
 
   .feature-card {
     width: 90%;
+    padding: 15px 12px;
   }
 }
 
@@ -319,17 +340,19 @@ body {
 /* Testimonials */
 .testimonials-section {
   background-color: #f1f8ff; /* soft blue/gray tone */
-  padding: 80px 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
+  padding: 40px 20px;
 }
 
 .testimonials-section .section-title {
-  font-size: 2.4rem;
+  /* font-size: 2.4rem; */
   color: #0f2027;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   font-weight: 700;
+   font-size: 2rem;
+  margin-bottom: 40px;
 }
 
 .testimonials-slider-wrapper {
@@ -349,10 +372,11 @@ body {
   flex: 0 0 300px;
   background-color: #fff;
   border-radius: 16px;
-  padding: 30px 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   scroll-snap-align: center;
+  padding: 20px 15px;
+  margin: 15px auto;
 }
 
 .testimonial-card:hover {
@@ -360,17 +384,19 @@ body {
 }
 
 .testimonial-card p {
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   color: #333;
   margin-bottom: 20px;
   font-style: italic;
   line-height: 1.6;
+  font-size: 1rem;
 }
 
 .testimonial-card h4 {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   color: #00796b;
   font-weight: bold;
+  font-size: 0.95rem;
 }
 
 /* Animation for continuous scrolling */
@@ -389,6 +415,8 @@ body {
 
   .testimonial-card {
     flex: 0 0 85%;
+    max-width: 95%;
+    padding: 15px 12px;
   }
 
   .testimonials-slider::-webkit-scrollbar {
@@ -431,14 +459,16 @@ body {
 .modal-content {
   background: #ffffff;
   margin: 8% auto;
-  padding: 30px 25px;
+  /* padding: 30px 25px; */
   border-radius: 10px;
   width: 90%;
-  max-width: 500px;
+  /* max-width: 500px; */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   position: relative;
   animation: slideDown 0.4s ease;
   font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  max-width: 420px;
 }
 
 /* Slide-down animation */
@@ -472,16 +502,19 @@ body {
 .modal-content h2 {
   margin-bottom: 15px;
   color: #0f2027;
-  font-size: 22px;
+  /* font-size: 22px; */
   border-bottom: 2px solid #203a43;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
+  font-size: 1.1rem;
+  padding-bottom: 8px;
 }
 
 /* Modal Paragraphs */
 .modal-content p {
-  font-size: 16px;
+  /* font-size: 16px; */
   color: #333;
   line-height: 1.6;
+   font-size: 0.95rem;
 }
 
 /* Optional Responsive Adjustments */
@@ -500,14 +533,15 @@ body {
 
 #contactForm input,
 #contactForm textarea {
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 5px;
   border: 1px solid #ccc;
   font-family: inherit;
+   padding: 8px;
 }
 
 #contactForm button {
-  padding: 10px;
+  /* padding: 10px; */
   border: none;
   background-color: #0f2027;
   color: white;
@@ -515,6 +549,8 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
+  padding: 8px;
+  font-size: 0.95rem;
 }
 
 #contactForm button:hover {
@@ -528,9 +564,11 @@ footer {
   background-color: #0f2027; /* Dark background */
   color: #fff;
   text-align: center;
-  padding: 40px 20px;
-  font-size: 0.95rem;
+  /* padding: 40px 20px; */
+  /* font-size: 0.95rem; */
   line-height: 1.6;
+  padding: 30px 16px;
+  font-size: 0.9rem;
 }
 
 .footer-links {
@@ -608,7 +646,7 @@ footer p {
 /* Stats Section Styling */
 .stats-section {
   background: linear-gradient(135deg, #e0f7fa, #ffffff);
-  padding: 80px 20px;
+  padding: 40px 20px;
   text-align: center;
   opacity: 0;
   transform: translateY(40px);
@@ -632,9 +670,9 @@ footer p {
 .stat {
   background-color: #ffffff;
   border-radius: 12px;
-  padding: 30px 40px;
+  padding: 20px 25px;
   min-width: 180px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
 
@@ -643,7 +681,7 @@ footer p {
 }
 
 .stat h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #00bcd4;
   margin-bottom: 10px;
@@ -657,7 +695,7 @@ footer p {
 
 /* Animation for Stats Counter */
 .counter {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: bold;
   color: #3498db;
   transition: transform 0.3s ease;

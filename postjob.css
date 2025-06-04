@@ -99,21 +99,22 @@ body {
 
 /* Container */
 .post-job-container {
-  max-width: 750px;
+  max-width: 600px;
   background: #ffffff;
   margin: auto;
-  padding: 40px 50px;
+  padding: 20px 25px;
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border-top: 5px solid #0b1120;
+  font-size: 0.9rem; 
 }
 
 /* Header */
 .post-job-container h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #1f2d3d;
-  font-size: 2rem;
+  font-size: 1.4rem;
   position: relative;
 }
 
@@ -134,8 +135,8 @@ form .form-group {
 
 form label {
   display: block;
-  font-weight: 600;
-  margin-bottom: 8px;
+  font-weight: 500;
+  margin-bottom: 6px;
   color: #333;
 }
 
@@ -143,7 +144,7 @@ form input,
 form select,
 form textarea {
   width: 100%;
-  padding: 12px 15px;
+  padding: 8px 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
   font-size: 1rem;
