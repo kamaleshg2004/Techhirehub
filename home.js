@@ -78,7 +78,8 @@ observer.observe(statsSection);
   // Optional: Handle form submit (you can connect to backend/email later)
   document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault();
-    alert("Message sent successfully!");
+    document.getElementById("formSuccess").style.display = "block";
+
     closeContactModal();
   });
 
@@ -93,3 +94,6 @@ observer.observe(statsSection);
     document.getElementById("privacyModal").style.display = "none";
   }
 
+document.querySelector(".cta-btn").addEventListener("click", () => {
+  window.location.href = "jobs.html";
+});
