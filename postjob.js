@@ -77,10 +77,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const role = localStorage.getItem("role");
+  const role = localStorage.getItem("role");
 
-    if (role !== "Recruiter") {
-      alert("This page is accessible by recruiters only.");
-      window.location.href = "home.html"; // redirect to home or jobs page
-    }
-  });
+  if (!role || role.toLowerCase() !== "recruiter") {
+    alert("This page is accessible by recruiters only.");
+    window.location.href = "home.html";
+  }
+});
