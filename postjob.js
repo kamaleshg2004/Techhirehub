@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const category = document.getElementById("category").value;
     const remote = document.getElementById("remote").value;
     const applyLink = document.getElementById("applyLink").value;
-    const logo = document.getElementById("logo").value;
+    // const logo = document.getElementById("logo").value;
 
     // Validate required fields
     if (!title || !company || !location || !applyLink || !type || !category) {
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
       category,
       remote,
       applyLink,
-      logo
+      // logo
     };
 
     // Save to localStorage
